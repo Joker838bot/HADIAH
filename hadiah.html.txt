@@ -1,0 +1,63 @@
+!DOCTYPE html
+html lang=id
+head
+  meta charset=UTF-8 
+  meta name=viewport content=width=device-width, initial-scale=1 
+  titleHadiah Wedding Virtualtitle
+  style
+    body {
+      background #ffc0cb;
+      font-family 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display flex;
+      justify-content center;
+      align-items center;
+      height 100vh;
+      margin 0;
+      flex-direction column;
+      color #333;
+    }
+    #gift-box {
+      width 150px;
+      cursor pointer;
+      transition transform 0.3s ease;
+    }
+    #gift-boxhover {
+      transform scale(1.1);
+    }
+    #message {
+      margin-top 20px;
+      font-size 1.2rem;
+      max-width 300px;
+      text-align center;
+      display none;
+    }
+    #doraemon {
+      width 200px;
+      display none;
+      margin-top 20px;
+      animation fadeIn 1s ease forwards;
+    }
+    @keyframes fadeIn {
+      from {opacity 0;}
+      to {opacity 1;}
+    }
+  style
+head
+body
+  img id=gift-box src=httpscdn.pixabay.comphoto201711092141gift-2936791_1280.png alt=Kotak Hadiah 
+  img id=doraemon src=httpsstatic.wikia.nocookie.netdoraemonimages553Doraemon_Anime.png alt=Doraemon 
+  div id=messageSelamat wedding! Semoga cinta kalian selalu tumbuh dan bahagia selamanya 💕div
+
+  script
+    const giftBox = document.getElementById('gift-box');
+    const doraemon = document.getElementById('doraemon');
+    const message = document.getElementById('message');
+
+    giftBox.addEventListener('click', () = {
+      giftBox.style.display = 'none';
+      doraemon.style.display = 'block';
+      message.style.display = 'block';
+    });
+  script
+body
+html
